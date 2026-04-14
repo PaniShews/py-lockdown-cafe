@@ -5,10 +5,16 @@ from app.errors import NotWearingMaskError
 
 
 class Cafe:
-    def __init__(self, name: str) -> str:
+    def __init__(
+            self,
+            name: str
+    ) -> str:
         self.name = name
 
-    def visit_cafe(self, visitors: dict) -> None:
+    def visit_cafe(
+            self,
+            visitors: dict
+    ) -> None:
         if visitors.get("vaccine") is None:
             raise NotVaccinatedError("Visitor is not vaccinated")
 
