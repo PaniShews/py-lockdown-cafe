@@ -6,9 +6,9 @@ from app.errors import (
 
 
 def go_to_cafe(
-        friends: list,
+        friends: list[dict],
         cafe: Cafe
-) -> str:
+) -> None:
     masks_to_buy = 0
 
     try:
